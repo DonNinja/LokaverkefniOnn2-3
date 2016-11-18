@@ -1,8 +1,11 @@
 body {
-	
+	background: #2b2b2b;
+	color: white;
 }
 .titill {
 	font-size: 2em;
-	border:solid darkgrey;
+	border:solid #4d4e4f;
 	text-align: center;
+	margin-left: 4em;
+	margin-right: 4em;
 }
