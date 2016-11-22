@@ -57,6 +57,22 @@ body {
 	display: block;
 }
 
+
+
+@media all and (min-width: 0-30em;) {
+  .aside { flex: 1 100%; 
+    width: 100%;}
+ 
+}      
+  
+
+@media all and (min-width: 30-48em;) {
+  .main     { flex: 3 0px;}
+  .aside-1  { order: 1; } 
+  .aside-2  { order: 2; }
+  .footer   { order: 3; }
+  .nav      { order: 4; }
+}
 /*----------SIDETAB----------*/
 .sidetab {
 	position: fixed;
