@@ -16,7 +16,6 @@ body {
 .tenglar {
 	flex: 1;
 	width: 20%;
-	/*background: white;*/
 }
 .innar {
 	align-content: center;
@@ -49,6 +48,7 @@ body {
 	margin-bottom: 0;
 }
 
+<<<<<<< HEAD
 
 @media all and (min-width: 0-30em;) {
   .aside { flex: 1 100%; 
@@ -65,3 +65,9 @@ body {
   .nav      { order: 4; }
 
 }
+=======
+/*----------SIDETAB----------*/
+.sidetab {
+	position: fixed;
+}
+>>>>>>> 14794b3f87e4daffdfc9bcfc2f442cccee69f64d
