@@ -50,5 +50,5 @@ body {
 
 /*----------SIDETAB----------*/
 .sidetab {
-	
+	position: fixed;
 }
