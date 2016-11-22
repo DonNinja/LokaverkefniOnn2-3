@@ -15,7 +15,7 @@ body {
 }
 .tenglar {
 	flex: 1;
-	width: 30%;
+	width: 20%;
 	/*background: white;*/
 }
 .innar {
@@ -23,7 +23,7 @@ body {
 	margin-top: 7.8em;
 	border: solid 1px black;
 	text-align: center;
-	width: 300px;
+	width: 160px;
 }
 .link {
 	align-content: center;
@@ -37,9 +37,14 @@ body {
 }
 .textinn {
 	flex: 2;
-	width: 70%;
+	width: 80%;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 .allt {
 	display: flex;
 	padding-top: 3em;
+}
+.amillimynd {
+	margin-bottom: 0;
 }
