@@ -16,7 +16,6 @@ body {
 .tenglar {
 	flex: 1;
 	width: 20%;
-	/*background: white;*/
 }
 .innar {
 	align-content: center;
@@ -47,4 +46,9 @@ body {
 }
 .amillimynd {
 	margin-bottom: 0;
+}
+
+/*----------SIDETAB----------*/
+.sidetab {
+	
 }
