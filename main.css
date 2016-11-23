@@ -16,16 +16,27 @@ body {
 .tenglar {
 	flex: 1;
 	max-width: 20%;
-	margin-left: 4em;
+	margin-left: 1.5em;
 }
 .innar {
 	align-content: center;
-	margin-top: 7.8em;
 	border: solid 1px black;
 	text-align: center;
 	width: 160px;
 }
 .innar2 {
+	align-content: center;
+	border: solid 1px black;
+	text-align: center;
+	width: 160px;
+}
+.innar3 {
+	align-content: center;
+	border: solid 1px black;
+	text-align: center;
+	width: 160px;
+}
+.innar4 {
 	align-content: center;
 	border: solid 1px black;
 	text-align: center;
@@ -38,6 +49,7 @@ body {
 	text-decoration: none;
 }
 .maintalk {
+	padding-left: 10%;
 	font-size: 1.25em;
 	font-weight: normal;
 }
@@ -54,25 +66,41 @@ body {
 	margin-bottom: 0;
 }
 .kassium {
-	display: block;
+	display: inline-flex;
+}
+.kassium {
+	display: inline-flex;
+}
+.topmynd {
+	border-top: 1.25px solid black;
+}
+.botmynd {
+	border-bottom: 1.25px solid black;
+}
+.vinstrimynd {
+	border-left: 1.25px solid black;
+}
+.haegrimynd {
+	border-right: 1.25px solid black;
+}
+.titill2 {
+	font-size: 2.5em;
+	border:solid #4d4e4f;
+	text-align: center;
+	margin-left: 4em;
+	margin-right: 4em;
+	margin-bottom: .5em;
+	margin-top: 2em;
+}
+.nafntitill {
+	text-align: center;
+	font-size: 1.75em;
+	border-bottom: 3px solid #4d4e4f;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-bottom: .5em;
 }
 
-
-
-@media all and (min-width: 0-30em;) {
-  .aside { flex: 1 100%; 
-    width: 100%;}
- 
-}      
-  
-
-@media all and (min-width: 30-48em;) {
-  .main     { flex: 3 0px;}
-  .aside-1  { order: 1; } 
-  .aside-2  { order: 2; }
-  .footer   { order: 3; }
-  .nav      { order: 4; }
-}
 /*----------SIDETAB----------*/
 .sidetab {
 	position: fixed;
@@ -80,5 +108,41 @@ body {
 	top: 0;
 	padding: 1em;
 	height: 100%;
-	background: green;
+	background: white;
+	color: black;
+	max-width: 80px;
+	font-weight: bold;
+	border-left: 2px solid grey;
+}
+.insidetab {
+	padding-top: 3em;
+	text-align: center;
+}
+.titleisidetab {
+	font-size: 125%;
+	text-align: center;
+}
+.textiisidetab {
+	font-size: 125%;
+	padding-bottom: .25em;
+	border-bottom: 1px solid black;
+}
+.textiisidetab2 {
+	padding-bottom: .25em;
+	padding-top: .25em;
+	font-size: 125%;
+	border-bottom: 1px solid black;
+}
+	
+@media all and (min-width: 0-30em;) {
+  .aside { flex: 1 100%; 
+    width: 100%;} 
+}
+
+@media all and (min-width: 30-48em;) {
+  .main     { flex: 3 0px;}
+  .aside-1  { order: 1; } 
+  .aside-2  { order: 2; }
+  .footer   { order: 3; }
+  .nav      { order: 4; }
 }
