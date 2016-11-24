@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+@import url(//db.onlinewebfonts.com/c/a5fd4a045ab8bba0b0d8519885659d51?family=Van+Helsing);
+
 @font-face {
   font-family: 'icomoon';
   src:  url('fonts/icomoon.eot?azcswn');
@@ -36,9 +39,33 @@
 }
 .icon-home:before {
   content: "\e903";
+  font-size: 1.25em;
 }
 
+@font-face {
+    font-family: 'optimusprincepsregular';
+    src: url('fonts/optimusprinceps-webfont.woff2') format('woff2'),
+         url('fonts/optimusprinceps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+@font-face {
+    font-family: 'upheaval_tt_brkregular';
+    src: url('fonts/upheavtt-webfont.woff2') format('woff2'),
+         url('fonts/upheavtt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'van_helsingregular';
+    src: url('fonts/van_helsing-webfont.woff2') format('woff2'),
+         url('fonts/van_helsing-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
 	background: #2b2b2b;
@@ -65,24 +92,6 @@ body {
 	text-align: center;
 	width: 160px;
 }
-.innar2 {
-	align-content: center;
-	border: solid 1px black;
-	text-align: center;
-	width: 160px;
-}
-.innar3 {
-	align-content: center;
-	border: solid 1px black;
-	text-align: center;
-	width: 160px;
-}
-.innar4 {
-	align-content: center;
-	border: solid 1px black;
-	text-align: center;
-	width: 160px;
-}
 .link {
 	align-content: center;
 	font-size: 1.2em;
@@ -98,6 +107,17 @@ body {
 	flex: 2;
 	max-width: 80%;
 	padding-right: 10%;
+}
+.darksull {
+	font-family: 'optimusprincepsregular';
+	font-size: 1.25em;
+}
+.diss {
+	font-family: 'van_helsingregular';
+	font-size:1em;
+}
+.tboi {
+	font-family: 'upheaval_tt_brkregular';
 }
 .allt {
 	display: flex;
@@ -173,7 +193,7 @@ body {
 .textiisidetab2 {
 	padding-bottom: .25em;
 	padding-top: .25em;
-	font-size: 125%;
+	font-size: 1.25em;
 	border-bottom: 1px solid black;
 }
 .sidetablink {
