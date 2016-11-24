@@ -1,4 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?azcswn');
+  src:  url('fonts/icomoon.eot?azcswn#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?azcswn') format('truetype'),
+    url('fonts/icomoon.woff?azcswn') format('woff'),
+    url('fonts/icomoon.svg?azcswn#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dorksouls:before {
+  content: "\e900";
+}
+.icon-favicon:before {
+  content: "\e901";
+}
+.icon-boi:before {
+  content: "\e902";
+}
+.icon-home:before {
+  content: "\e903";
+}
+
+
+
 body {
 	background: #2b2b2b;
 	color: white;
@@ -115,12 +156,14 @@ body {
 	border-left: 2px solid grey;
 }
 .insidetab {
-	padding-top: 3em;
+	padding-top: 1em;
 	text-align: center;
 }
 .titleisidetab {
+	padding-bottom: 1em;
 	font-size: 125%;
 	text-align: center;
+	border-bottom: 2px solid black;
 }
 .textiisidetab {
 	font-size: 125%;
@@ -132,6 +175,10 @@ body {
 	padding-top: .25em;
 	font-size: 125%;
 	border-bottom: 1px solid black;
+}
+.sidetablink {
+	color: black;
+	text-decoration: none;
 }
 	
 @media all and (min-width: 0-30em;) {
