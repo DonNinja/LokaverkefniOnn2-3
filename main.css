@@ -78,6 +78,8 @@ body {
 	color: white;
 	font-family: 'Slabo 27px', serif;
 	display: flex;
+	margin: 0 auto;
+	padding: 0;
 }
 .titill {
 	font-size: 2.5em;
@@ -208,12 +210,13 @@ body {
 	text-decoration: none;
 }
 	
-@media all and (max-width: 30em;) {
-  .textinn { order: 1;
-  			 width: 100%; }
-  .tenglar { order: 2; 
-  			 width: 100%;}
-    input {
+@media all and (max-width: 30em) {
+	body { display: flex;
+			max-width: 30em;}
+	.textinn { order: 1; }
+	.tenglar { order: 2; }
+
+	input {
 		display: none;
 	}
 	label,
@@ -243,7 +246,7 @@ body {
 	  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
 	  color: #9799a7;
 	}
-	input:checked ~ .sidetab {
+	input:checked ~ .navvvv {
 		position: fixed;
 		bottom: 2.25em;
 		left: 0;
@@ -252,7 +255,6 @@ body {
 	.sidetab {
 		position: fixed;
 		bottom: -15em;
-		right: 0;
 		left: 0;
 		width: 100%;
 
@@ -269,14 +271,42 @@ body {
 	  padding: 0;
 	  width: 100%;
 	}
-
+	.sidetablink {
+	  width: 100%;
+	  display: block;
+	}
+	.sidetablink:last-child {
+	  border-bottom: 0;
+	}
+	.textinn {
+		order: 1;
+	}
+	.tenglar {
+		order: 2;
+	}
+	.sidetab {
+		flex: 1 auto;
+		order: 3;
+		text-align: center;
+		padding: 0;
+		
+		position: bottom fixed;
+	}
+	.sidetablink {
+		padding-top: .5em;
+		color: black;
+	}
+	.sidetabling {
+		border-bottom: 1px solid black;
+	}
 
 }
+@media all and (min-width: 30em) and (max-width: 48em) {
 
-@media all and (min-width: 30-48em;) {
-  .main     { flex: 3 0px;}
-  .aside-1  { order: 1; } 
-  .aside-2  { order: 2; }
-  .footer   { order: 3; }
-  .nav      { order: 4; }
+}
+@media all and (min-width: 48em) and (max-width: 60em) {
+}
+@media all and (min-width: 60em) {
+	label { display: none; }
+	input { display: none; }
 }
