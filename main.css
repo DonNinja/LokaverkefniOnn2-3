@@ -73,6 +73,7 @@
     font-style: normal;
 }
 
+
 body {
 	background: #2b2b2b;
 	color: white;
@@ -80,6 +81,8 @@ body {
 	display: flex;
 	margin: 0 auto;
 	padding: 0;
+	box-sizing: border-box;
+	flex-flow: row wrap;
 }
 .titill {
 	font-size: 2.5em;
@@ -114,7 +117,6 @@ body {
 .textinn {
 	order: 2;
 	max-width: 80%;
-	padding-right: 9%;
 }
 .darksull {
 	font-family: 'optimusprincepsregular';
@@ -177,12 +179,44 @@ body {
 	color: black;
 	text-decoration: none;
 }
+
 	
 @media all and (max-width: 30em) {
-	body { display: flex;
-			max-width: 30em;}
-	.textinn { order: 1; }
-	.tenglar { order: 2; }
+	input { display: none; }
+	body { display: flex; }
+	body {
+			text-align: center;
+			padding-bottom: 2em;
+			width: 100%;
+		}
+	.mynd2 {
+		left: 50%;
+	}
+	.diss {
+		font-size: 125%;
+	}
+
+	.allt {
+		flex-flow: row wrap;
+	}
+	.titill2, .titill {
+	font-size: 2.5em;
+	border:solid #4d4e4f;
+	text-align: center;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: .5em;
+	text-align: center;
+
+}
+	.textinn { order: 1;
+				text-align: center;
+				padding-right: .5em;
+				width: 100%; }
+	.tenglar { order: 2;
+			   margin-top: 5em; }
+
+
 	label,
 	.insidetab {
 	  border: 1px solid #cecfd5;
@@ -191,24 +225,21 @@ body {
 	}
 	label {
 	  background-color: black;
-	  color: #0087cc;
+	  color: white;
 	  cursor: pointer;
-	  display: inline-block;	
-	  font-size: 18px;
+	  display: inline-block;
 	  padding: 5px 9px;
 	  transition: all .15s ease;
 	  bottom: 1px;
 	  text-align: center;
-	  font-stretch: 150%;
-	  width: 100%;
+	  width: 95%;
 	  position: fixed;
+	  overflow: hidden;
 	}
 	label:hover {
-	  color: #ff7b29;
 	}
 	input:checked + label {
 	  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
-	  color: #9799a7;
 	}
 	input:checked ~ .sidetab {
 		position: fixed;
@@ -217,15 +248,14 @@ body {
 		transition: all 1s ease;
 	}
 	.sidetab {
-
 		position: fixed;
-		bottom: -15em;
+		bottom: -20em;
 		left: 0;
 		width: 100%;
 
-	  max-height: 0;
-	  overflow: hidden;
-	  transition: all .15s ease;
+		overflow: hidden;
+		transition: all .15s ease;
+		background: white;
 	}
 	input:checked ~ .sidetab {
 	  max-height: 500px;
@@ -239,32 +269,50 @@ body {
 	.sidetablink {
 	  width: 100%;
 	  display: block;
+	  border-bottom: 1px solid black;
 	}
 	.sidetablink:last-child {
 	  border-bottom: 0;
 	}
 	.textinn {
 		order: 1;
+		width: 100%;
+	}
+	.textiisidetab3 {
+		border-bottom: 2px solid grey;
+		padding-bottom: .5em;
+		padding-top: 0;
 	}
 	.tenglar {
 		order: 2;
+		width: 100%;
+		
 	}
 	.sidetab {
 		flex: 1 auto;
 		order: 3;
 		text-align: center;
 		padding: 0;
-		
 		position: bottom fixed;
 	}
 	.sidetablink {
 		padding-top: .5em;
 		color: black;
 	}
-	.sidetabling {
-		border-bottom: 1px solid black;
+	.sidetablink {
+		border-bottom: 2px solid grey;
 	}
-
+	.nafntitill {
+		display: inline;
+		margin-left: 2.5em;
+		margin-bottom: 4em;
+	}
+	.crashed {
+		margin-bottom: 1em;
+	}
+	.homebut, .darksull, .diss, .tboi {
+		padding-bottom: .5em;
+	}
 }
 @media all and (min-width: 30em) and (max-width: 48em) {
 
@@ -272,8 +320,14 @@ body {
 @media all and (min-width: 48em) and (max-width: 60em) {
 }
 @media all and (min-width: 60em) {
-		label { display: none; }
-		input { display: none; }
+	body {
+		padding-right: 9%;
+	}
+	label { display: none; }
+	input { display: none; }
+	.textinn {
+		padding-left: 5%;
+	}
 	.sidetab {
 		position: fixed;
 		right: 0;
