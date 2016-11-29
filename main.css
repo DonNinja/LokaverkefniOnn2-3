@@ -114,10 +114,6 @@ body {
 	font-size: 1.25em;
 	font-weight: normal;
 }
-.textinn {
-	order: 2;
-	max-width: 80%;
-}
 .darksull {
 	font-family: 'optimusprincepsregular';
 	font-size: 1.25em;
@@ -183,18 +179,18 @@ body {
 	
 @media all and (max-width: 30em) {
 	input { display: none; }
-	body { display: flex; }
+	body { display: flex;
+			max-width: 30em; }
 	body {
 			text-align: center;
 			padding-bottom: 2em;
 		}
-	.mynd2 {
-		left: 50%;
-	}
 	.diss {
 		font-size: 125%;
 	}
-
+	.kassium {
+		padding-left: 4.5em;
+	}
 	.allt {
 		flex-flow: row wrap;
 	}
@@ -202,19 +198,18 @@ body {
 	font-size: 2.5em;
 	border:solid #4d4e4f;
 	text-align: center;
-	margin-left: 1em;
+	margin-left: 2.25em;
 	margin-right: 1em;
 	margin-bottom: .5em;
 	text-align: center;
 
-}
+	}
 	.textinn { order: 1;
 				text-align: center;
-				padding-right: .5em;
-				width: 100%; }
+				padding-right: 0em;
+				width: 28em; }
 	.tenglar { order: 2;
 			   margin-top: 5em; }
-
 
 	label,
 	.insidetab {
@@ -229,7 +224,7 @@ body {
 	  display: inline-block;
 	  padding: 5px 9px;
 	  transition: all .15s ease;
-	  bottom: 1px;
+	  bottom: 0;
 	  text-align: center;
 	  width: 95%;
 	  position: fixed;
@@ -255,6 +250,8 @@ body {
 		overflow: hidden;
 		transition: all .15s ease;
 		background: white;
+
+		background:rgba(255, 255, 255, 0.875); 
 	}
 	input:checked ~ .sidetab {
 	  max-height: 500px;
@@ -272,10 +269,6 @@ body {
 	}
 	.sidetablink:last-child {
 	  border-bottom: 0;
-	}
-	.textinn {
-		order: 1;
-		width: 100%;
 	}
 	.textiisidetab3 {
 		border-bottom: 2px solid grey;
@@ -302,8 +295,11 @@ body {
 	}
 	.nafntitill {
 		display: inline;
-		margin-left: 2.5em;
+		margin-left: 5em;
 		margin-bottom: 4em;
+	}
+	.umokkur {
+		padding-top: 1em;
 	}
 	.crashed {
 		margin-bottom: 1em;
@@ -323,6 +319,11 @@ body {
 	}
 	label { display: none; }
 	input { display: none; }
+
+	.textinn {
+		order: 2;
+		max-width: 80%;
+	}
 	.textinn {
 		padding-left: 5%;
 	}
