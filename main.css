@@ -226,7 +226,7 @@ body {
 	  transition: all .15s ease;
 	  bottom: 0;
 	  text-align: center;
-	  width: 95%;
+	  width: 100%;
 	  position: fixed;
 	  overflow: hidden;
 	}
@@ -307,11 +307,196 @@ body {
 	.homebut, .darksull, .diss, .tboi {
 		padding-bottom: .5em;
 	}
+	.tab1 {
+		border-bottom: 2px solid grey;
+	}
 }
 @media all and (min-width: 30em) and (max-width: 48em) {
+	input { display: none; }
+	body { display: flex;
+			max-width: 48em; }
+	body {
+			text-align: center;
+			padding-bottom: 2em;
+		}
+	.diss {
+		font-size: 125%;
+	}
+	.tab1 {
+		border-bottom: 2px solid grey;
+	}
+	.kassium {
+		display: flex;
+		flex-flow: wrap;
+	}
+	.allt {
+		flex-flow: row wrap;
+	}
+	.titill2, .titill {
+	font-size: 2.5em;
+	border:solid #4d4e4f;
+	text-align: center;
+	margin-left: 2.25em;
+	margin-right: 1em;
+	margin-bottom: .5em;
+	text-align: center;
 
+	}
+	.textinn { order: 2;
+				text-align: center;
+				padding-right: 0em;
+				width: 28em; }
+	.tenglar { order: 1;
+			 }
+	.tab1 {
+		border-bottom: 2px solid grey;
+	}
+	label,
+	.insidetab {
+	  border: 1px solid #cecfd5;
+	  border-radius: 6px;
+	  width: 100%;
+	}
+	label {
+	  background-color: black;
+	  color: white;
+	  cursor: pointer;
+	  display: inline-block;
+	  padding: 5px 9px;
+	  transition: all .15s ease;
+	  bottom: 0;
+	  text-align: center;
+	  width: 100%;
+	  position: fixed;
+	  overflow: hidden;
+	}
+	label:hover {
+	}
+	input:checked + label {
+	  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+	}
+	input:checked ~ .sidetab {
+		position: fixed;
+		bottom: 2.25em;
+		left: 0;
+		transition: all 1s ease;
+	}
+	.sidetab {
+		position: fixed;
+		bottom: -20em;
+		left: 0;
+		width: 100%;
+
+		overflow: hidden;
+		transition: all .15s ease;
+		background: white;
+
+		background:rgba(255, 255, 255, 0.875); 
+	}
+	input:checked ~ .sidetab {
+	  max-height: 500px;
+	}
+	.insidetab {
+	  list-style: none;
+	  margin: 0px 0 0 0;
+	  padding: 0;
+	  width: 100%;
+	}
+	.sidetablink {
+	  width: 100%;
+	  display: block;
+	  border-bottom: 1px solid black;
+	}
+	.sidetablink:last-child {
+	  border-bottom: 0;
+	}
+	.textiisidetab3 {
+		border-bottom: 2px solid grey;
+		padding-bottom: .5em;
+		padding-top: 0;
+	}
+	.tenglar {
+		order: 1;
+		width: 20%;
+	}
+	.sidetab {
+		flex: 1 auto;
+		order: 3;
+		text-align: center;
+		padding: 0;
+		position: bottom fixed;
+	}
+	.sidetablink {
+		padding-top: .5em;
+		color: black;
+	}
+	.sidetablink {
+		border-bottom: 2px solid grey;
+	}
+	.nafntitill {
+		display: inline;
+		margin-left: 5em;
+		margin-bottom: 4em;
+	}
+	.umokkur {
+		padding-top: 1em;
+	}
+	.crashed {
+		margin-bottom: 1em;
+	}
+	.homebut, .darksull, .diss, .tboi {
+		padding-bottom: .5em;
+	}
 }
 @media all and (min-width: 48em) and (max-width: 60em) {
+	label { display: none; }
+	input { display: none; }
+
+	.allt {
+		padding-bottom: 2em;
+	}
+	.textinn {
+		order: 2;
+		max-width: 80%;
+	}
+	.textinn {
+		padding-left: 5%;
+	}
+	.sidetab {
+		position: fixed;
+		right: 0;
+		top: 0;
+		padding: 1em;
+		height: 100%;
+		background: white;
+		color: black;
+		max-width: 80px;
+		font-weight: bold;
+		border-left: 2px solid grey;
+	}
+	.kassium {
+	}
+	.insidetab {
+		padding-top: 1em;
+		text-align: center;
+	}
+	.titleisidetab {
+		padding-bottom: 1em;
+		font-size: 125%;
+		text-align: center;
+		border-bottom: 2px solid black;
+	}
+	.textiisidetab {
+		font-size: 125%;
+		padding-bottom: .25em;
+		border-bottom: 1px solid black;
+	}
+	.textiisidetab2 {
+		padding-bottom: .25em;
+		padding-top: .25em;
+		font-size: 1.25em;
+		border-bottom: 1px solid black;
+	}
 }
 @media all and (min-width: 60em) {
 	body {
@@ -320,6 +505,9 @@ body {
 	label { display: none; }
 	input { display: none; }
 
+	.allt {
+		padding-bottom: 2em;
+	}
 	.textinn {
 		order: 2;
 		max-width: 80%;
