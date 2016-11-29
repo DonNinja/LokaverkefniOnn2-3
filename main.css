@@ -117,7 +117,6 @@ body {
 .textinn {
 	order: 2;
 	max-width: 80%;
-	padding-right: 9%;
 }
 .darksull {
 	font-family: 'optimusprincepsregular';
@@ -185,6 +184,16 @@ body {
 @media all and (max-width: 30em) {
 	input { display: none; }
 	body { display: flex; }
+	body {
+			text-align: center;
+			padding-bottom: 2em;
+		}
+	.mynd2 {
+		left: 50%;
+	}
+	.diss {
+		font-size: 125%;
+	}
 
 	.allt {
 		flex-flow: row wrap;
@@ -196,11 +205,13 @@ body {
 	margin-left: 1em;
 	margin-right: 1em;
 	margin-bottom: .5em;
-	margin-top: 2em;
+	text-align: center;
+
 }
-
-
-	.textinn { order: 1; }
+	.textinn { order: 1;
+				text-align: center;
+				padding-right: .5em;
+				width: 100%; }
 	.tenglar { order: 2;
 			   margin-top: 5em; }
 
@@ -220,7 +231,7 @@ body {
 	  transition: all .15s ease;
 	  bottom: 1px;
 	  text-align: center;
-	  width: 100%;
+	  width: 95%;
 	  position: fixed;
 	  overflow: hidden;
 	}
@@ -237,12 +248,13 @@ body {
 	}
 	.sidetab {
 		position: fixed;
-		bottom: -15em;
+		bottom: -20em;
 		left: 0;
 		width: 100%;
 
 		overflow: hidden;
 		transition: all .15s ease;
+		background: white;
 	}
 	input:checked ~ .sidetab {
 	  max-height: 500px;
@@ -256,6 +268,7 @@ body {
 	.sidetablink {
 	  width: 100%;
 	  display: block;
+	  border-bottom: 1px solid black;
 	}
 	.sidetablink:last-child {
 	  border-bottom: 0;
@@ -263,6 +276,11 @@ body {
 	.textinn {
 		order: 1;
 		width: 100%;
+	}
+	.textiisidetab3 {
+		border-bottom: 2px solid grey;
+		padding-bottom: .5em;
+		padding-top: 0;
 	}
 	.tenglar {
 		order: 2;
@@ -280,9 +298,19 @@ body {
 		color: black;
 	}
 	.sidetablink {
-		border-bottom: 1px solid black;
+		border-bottom: 2px solid grey;
 	}
-
+	.nafntitill {
+		display: inline;
+		margin-left: 2.5em;
+		margin-bottom: 4em;
+	}
+	.crashed {
+		margin-bottom: 1em;
+	}
+	.homebut, .darksull, .diss, .tboi {
+		padding-bottom: .5em;
+	}
 }
 @media all and (min-width: 30em) and (max-width: 48em) {
 
@@ -290,8 +318,14 @@ body {
 @media all and (min-width: 48em) and (max-width: 60em) {
 }
 @media all and (min-width: 60em) {
-		label { display: none; }
-		input { display: none; }
+	body {
+		padding-right: 9%;
+	}
+	label { display: none; }
+	input { display: none; }
+	.textinn {
+		padding-left: 5%;
+	}
 	.sidetab {
 		position: fixed;
 		right: 0;
