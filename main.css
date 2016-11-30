@@ -86,7 +86,6 @@ body {
 }
 .titill {
 	font-size: 2.5em;
-	border:solid #4d4e4f;
 	text-align: center;
 	margin-left: 4em;
 	margin-right: 4em;
@@ -99,7 +98,6 @@ body {
 }
 .innar {
 	align-content: center;
-	border: solid 1px black;
 	text-align: center;
 	width: 160px;
 }
@@ -139,21 +137,8 @@ body {
 .kassium {
 	display: inline-flex;
 }
-.topmynd {
-	border-top: 1.25px solid black;
-}
-.botmynd {
-	border-bottom: 1.25px solid black;
-}
-.vinstrimynd {
-	border-left: 1.25px solid black;
-}
-.haegrimynd {
-	border-right: 1.25px solid black;
-}
 .titill2 {
 	font-size: 2.5em;
-	border:solid #4d4e4f;
 	text-align: center;
 	margin-left: 4em;
 	margin-right: 4em;
@@ -192,15 +177,13 @@ body {
 	.allt {
 		flex-flow: row wrap;
 	}
-	.titill2, .titill {
+	.titill2, .titill, .dstitill {
 	font-size: 2.5em;
-	border:solid #4d4e4f;
 	text-align: center;
 	margin-left: 2.25em;
 	margin-right: 1em;
 	margin-bottom: .5em;
 	text-align: center;
-
 	}
 	.textinn { order: 1;
 				text-align: center;
@@ -330,7 +313,6 @@ body {
 	}
 	.titill2, .titill {
 	font-size: 2.5em;
-	border:solid #4d4e4f;
 	text-align: center;
 	margin-left: 2.25em;
 	margin-right: 1em;
@@ -494,6 +476,9 @@ body {
 		font-size: 1.25em;
 		border-bottom: 1px solid black;
 	}
+	.everything {
+		text-align: center;
+	}
 }
 @media all and (min-width: 60em) {
 	body {
@@ -544,5 +529,26 @@ body {
 		padding-top: .25em;
 		font-size: 1.25em;
 		border-bottom: 1px solid black;
+	}
+	.dstitill {
+		padding-top: .5em;
+		text-align: center;
+		font-size: 3em;
+		width: 100%
+	}
+	.everything {
+		width: 100%;
+		text-align: center;
+	}
+	.subtenglar {
+		display: inline-block;
+	}
+	.dsimage {
+		margin-top: 4em;
+		padding-left: 19.5em;
+	}
+	.dslink {
+		font-size: 1.25em;
+		text-align: center;
 	}
 }
