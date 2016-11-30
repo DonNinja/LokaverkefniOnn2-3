@@ -196,7 +196,7 @@ body {
 	.insidetab {
 	  border: 1px solid #cecfd5;
 	  border-radius: 6px;
-	  width: 90%;
+	  width: 100%;
 	}
 	label {
 	  background-color: black;
@@ -482,7 +482,7 @@ body {
 }
 @media all and (min-width: 60em) {
 	body {
-		padding-right: 9%;
+		padding-right: 116px;
 	}
 	label { display: none; }
 	input { display: none; }
@@ -537,18 +537,30 @@ body {
 		width: 100%
 	}
 	.everything {
+		display: flex;
+		flex-flow: row;
 		width: 100%;
+	}
+	.kassium2 {
+		display: inline-flex;
+	}
+	.tenglar2 {
+		padding-top: 2em;
+		max-width: 100%;	
+	}
+	.topmynd {
+
+	}
+	.vinstrimynd {
 		text-align: center;
+		padding-right: 0%;
 	}
-	.subtenglar {
-		display: inline-block;
-	}
-	.dsimage {
-		margin-top: 4em;
-		padding-left: 19.5em;
-	}
-	.dslink {
-		font-size: 1.25em;
+	.haegrimynd {
 		text-align: center;
+		padding-right: 0%;
 	}
+	.link {
+		display: inline;
+	}
+
 }
