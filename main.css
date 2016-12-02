@@ -173,6 +173,12 @@ body {
 	float: left;
 	padding: 1em;
 }
+.wikilink:visited {
+	color: lightblue;
+}
+.annadallt {
+	display: flex;
+}
 
 /*----------SIDETAB----------*/
 
@@ -567,5 +573,14 @@ body {
 	.dslink {
 		font-size: 1.25em;
 		text-align: center;
+	}
+	.annartexti {
+		font-size: 1.2em;
+	}
+	.vinstri {
+		order: 1;
+	}
+	.annartexti {
+		order: 2;
 	}
 }
