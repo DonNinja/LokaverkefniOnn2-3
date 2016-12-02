@@ -179,6 +179,19 @@ body {
 .annadallt {
 	display: flex;
 }
+.tboititle {
+	font-family: 'upheaval_tt_brkregular';
+}
+.dstitle {
+	font-family: 'optimusprincepsregular';
+	font-weight: normal;
+	font-size: 2.5em;
+}
+.crashedtitle {
+	font-family: 'crash-a-likecrash-a-like';
+	font-weight: normal;
+	font-size: 2.5em;
+}
 
 /*----------SIDETAB----------*/
 
