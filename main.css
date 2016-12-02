@@ -173,6 +173,9 @@ body {
 	float: left;
 	padding: 1em;
 }
+.wikilink {
+	color: lightblue;
+}
 .wikilink:visited {
 	color: lightblue;
 }
@@ -189,6 +192,11 @@ body {
 }
 .crashedtitle {
 	font-family: 'crash-a-likecrash-a-like';
+	font-weight: normal;
+	font-size: 2.5em;
+}
+.disstitle {
+	font-family: 'van_helsingregular';
 	font-weight: normal;
 	font-size: 2.5em;
 }
@@ -600,5 +608,6 @@ body {
 	}
 	.annartexti {
 		order: 2;
+		padding-right: .5em;
 	}
 }
