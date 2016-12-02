@@ -184,6 +184,7 @@ body {
 }
 .tboititle {
 	font-family: 'upheaval_tt_brkregular';
+	font-weight: normal;
 }
 .dstitle {
 	font-family: 'optimusprincepsregular';
@@ -556,6 +557,10 @@ body {
 	.allt {
 		padding-bottom: 2em;
 	}
+	.annadallt {
+		display: flex;
+		flex-flow: row-reverse;
+	}
 	.textinn {
 		order: 2;
 		max-width: 80%;
@@ -621,7 +626,6 @@ body {
 		text-align: center;
 		padding-right: 0%;
 	}
-
 	.annartexti {
 		font-size: 1.2em;
 	}
@@ -633,10 +637,7 @@ body {
 		padding-right: .5em;
 		padding-top: 1.5em;
 	}
-	.annartexti2 {
-		order: 3;
-		padding-right: .5em;
-		padding-top: 1.5em;
-		font-size: 1.2em;
+	.bandailink {
+
 	}
 }
