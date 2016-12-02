@@ -358,6 +358,10 @@ body {
 		text-align: center;
 		width: 100%;
 	}
+	.fullannartexti {
+		width: 90%;
+		padding-left: 1em 
+	}
 }
 @media all and (min-width: 30em) and (max-width: 48em) {
 	input { display: none; }
@@ -491,6 +495,9 @@ body {
 	}
 	.homebut, .darksull, .diss, .tboi {
 		padding-bottom: .5em;
+	}
+	.fullannartexti {
+		padding-right: 2em;
 	}
 }
 @media all and (min-width: 48em) and (max-width: 60em) {
