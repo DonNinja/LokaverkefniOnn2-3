@@ -200,6 +200,9 @@ body {
 	font-weight: normal;
 	font-size: 2.5em;
 }
+.annartextititle {
+	font-size: 1.25em;
+}
 
 /*----------SIDETAB----------*/
 
@@ -214,7 +217,10 @@ body {
 	body {
 			text-align: center;
 			padding-bottom: 2em;
-		}
+	}
+	.annadallt {
+		flex-flow: wrap;
+	}
 	.diss {
 		font-size: 125%;
 	}
@@ -271,7 +277,7 @@ body {
 	}
 	.sidetab {
 		position: fixed;
-		bottom: -20em;
+		bottom: -25em;
 		left: 0;
 		width: 100%;
 
@@ -334,6 +340,22 @@ body {
 	}
 	.tab1 {
 		border-bottom: 2px solid grey;
+	}
+	.maintalk2 {
+		padding-top: 1em;
+	}
+	.maintalkspecial {
+		padding-bottom: 1em;
+	}
+	.vinstri {
+		order: 2;
+		width: 100%;
+		text-align: center;
+	}
+	.annartexti {
+		order: 1;
+		text-align: center;
+		width: 100%;
 	}
 }
 @media all and (min-width: 30em) and (max-width: 48em) {
@@ -405,7 +427,7 @@ body {
 	}
 	.sidetab {
 		position: fixed;
-		bottom: -20em;
+		bottom: -25em;
 		left: 0;
 		width: 100%;
 
@@ -434,7 +456,7 @@ body {
 	}
 	.textiisidetab3 {
 		border-bottom: 2px solid grey;
-		padding-bottom: .5em;
+		padding-bottom: .25em;
 		padding-top: 0;
 	}
 	.tenglar {
@@ -449,7 +471,7 @@ body {
 		position: bottom fixed;
 	}
 	.sidetablink {
-		padding-top: .5em;
+		padding-top: .25em;
 		color: black;
 	}
 	.sidetablink {
@@ -609,5 +631,12 @@ body {
 	.annartexti {
 		order: 2;
 		padding-right: .5em;
+		padding-top: 1.5em;
+	}
+	.annartexti2 {
+		order: 3;
+		padding-right: .5em;
+		padding-top: 1.5em;
+		font-size: 1.2em;
 	}
 }
