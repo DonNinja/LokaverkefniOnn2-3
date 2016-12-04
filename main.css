@@ -173,6 +173,11 @@ body {
 	float: left;
 	padding: 1em;
 }
+.haegri
+{
+	float: right;
+	padding: 1em;
+}
 .wikilink {
 	color: lightblue;
 }
@@ -567,6 +572,9 @@ body {
 	.annadallt {
 		display: flex;
 		flex-flow: row-reverse;
+	}
+	.annadallt2 {
+		display: flex;
 	}
 	.textinn {
 		order: 2;
