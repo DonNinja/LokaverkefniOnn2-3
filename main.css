@@ -173,6 +173,11 @@ body {
 	float: left;
 	padding: 1em;
 }
+.haegri
+{
+	float: right;
+	padding: 1em;
+}
 .wikilink {
 	color: lightblue;
 }
